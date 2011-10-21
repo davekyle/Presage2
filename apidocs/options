@@ -1,0 +1,36 @@
+-bootclasspath
+'/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes'
+-classpath
+'/home/sm1106/Dropbox/Code/PhD/Presage/target/classes:/home/sm1106/Dropbox/Code/PhD/Presage/core/target/classes:/home/sm1106/Dropbox/Code/PhD/Presage/util/target/classes:/home/sm1106/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/home/sm1106/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/sm1106/.m2/repository/uk/ac/imperial/presage2/presage2-core/0.2.5-SNAPSHOT/presage2-core-0.2.5-SNAPSHOT.jar:/home/sm1106/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/home/sm1106/.m2/repository/com/google/inject/extensions/guice-assistedinject/3.0/guice-assistedinject-3.0.jar:/home/sm1106/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/home/sm1106/.m2/repository/com/google/inject/extensions/guice-multibindings/3.0/guice-multibindings-3.0.jar:/home/sm1106/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar:/home/sm1106/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar'
+-doclet
+'com.google.doclava.Doclava'
+-docletpath
+'/home/sm1106/.m2/repository/com/google/doclava/doclava/1.0.3/doclava-1.0.3.jar:/home/sm1106/.m2/repository/com/google/guava/guava/r06/guava-r06.jar:/home/sm1106/.m2/repository/com/google/jsilver/jsilver/1.0.0/jsilver-1.0.0.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/tools.jar:/home/sm1106/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/sm1106/Dropbox/Code/PhD/Presage/core/src/main/java:/home/sm1106/Dropbox/Code/PhD/Presage/util/src/main/java'
+-federate JDK
+						http://download.oracle.com/javase/6/docs/api/index.html?
+						-federationxml JDK
+						http://doclava.googlecode.com/svn/static/api/openjdk-6.xml
+						-federate "Google Guice"
+						http://google-guice.googlecode.com/svn/trunk/javadoc
+						-apiversion
+						0.2.5-SNAPSHOT
+						-since
+						http://presage.github.com/docs/api/0.2.1.xml
+						0.2.1
+						-since
+						http://presage.github.com/docs/api/0.2.2.xml
+						0.2.2
+						-since
+						http://presage.github.com/docs/api/0.2.3.xml
+						0.2.3
+						-since
+						http://presage.github.com/docs/api/0.2.4.xml
+						0.2.4
+						-d
+						/home/sm1106/Dropbox/Code/PhD/Presage/target/site/apidocs
+						-title Presage2
