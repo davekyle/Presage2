@@ -12,7 +12,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>Presage2 - Project Dependencies</title>
+    <title>presage2-core - Project Dependencies</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
@@ -25,7 +25,7 @@
     <div id="banner">
                     <span id="bannerLeft">
     
-            Presage2
+            presage2-core
     
             </span>
                     <div class="clear">
@@ -44,7 +44,7 @@
             <div class="xleft">
         Last Published: 2011-11-17
                       </div>
-            <div class="xright">            <a href="">Presage2</a>
+            <div class="xright">            <a href="">presage2-core</a>
             
   
 
@@ -68,18 +68,7 @@
   
   
     
-                             <h5>Modules</h5>
-            <ul>
-              
-    <li class="none">
-                    <a href="presage2-core/index.html">presage2-core</a>
-          </li>
-              
-    <li class="none">
-                    <a href="presage2-util/index.html">presage2-util</a>
-          </li>
-          </ul>
-              <h5>Project Documentation</h5>
+                             <h5>Project Documentation</h5>
             <ul>
               
                 
@@ -178,7 +167,558 @@
     <div id="bodyColumn">
       <div id="contentBox">
         <div class="section"><h2>Project Dependencies</h2>
-<p>There are no dependencies for this project. It is a standalone application that does not depend on any other project.</p>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>com.google.inject</td>
+<td><a href="http://code.google.com/p/google-guice/guice" class="externalLink">guice</a></td>
+<td>3.0</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>com.google.inject.extensions</td>
+<td><a href="http://code.google.com/p/google-guice/extensions-parent/guice-assistedinject" class="externalLink">guice-assistedinject</a></td>
+<td>3.0</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>com.google.inject.extensions</td>
+<td><a href="http://code.google.com/p/google-guice/extensions-parent/guice-multibindings" class="externalLink">guice-multibindings</a></td>
+<td>3.0</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-cli</td>
+<td><a href="http://commons.apache.org/cli/" class="externalLink">commons-cli</a></td>
+<td>1.2</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>log4j</td>
+<td><a href="http://logging.apache.org/log4j/1.2/" class="externalLink">log4j</a></td>
+<td>1.2.16</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>test</h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>junit</td>
+<td><a href="http://junit.org" class="externalLink">junit</a></td>
+<td>4.8.2</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.jmock</td>
+<td>jmock</td>
+<td>2.5.1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.jmock</td>
+<td>jmock-junit4</td>
+<td>2.5.1</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Transitive Dependencies</h2>
+<p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>aopalliance</td>
+<td><a href="http://aopalliance.sourceforge.net" class="externalLink">aopalliance</a></td>
+<td>1.0</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>javax.inject</td>
+<td><a href="http://code.google.com/p/atinject/" class="externalLink">javax.inject</a></td>
+<td>1</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>test</h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="a"><td>junit</td>
+<td><a href="http://junit.org" class="externalLink">junit-dep</a></td>
+<td>4.4</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.hamcrest</td>
+<td>hamcrest-core</td>
+<td>1.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.hamcrest</td>
+<td>hamcrest-library</td>
+<td>1.1</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetail( divId, imgId )
+      {
+        var div = document.getElementById( divId );
+        var img = document.getElementById( imgId );
+        if( div.style.display == '' )
+        {
+          div.style.display = 'none';
+          img.src='./images/icon_info_sml.gif';
+        }
+        else
+        {
+          div.style.display = '';
+          img.src='./images/close.gif';
+        }
+      }
+</script>
+<div class="section"><h3>Dependency Tree</h3>
+<ul><li>uk.ac.imperial.presage2:presage2-core:jar:0.2.5-SNAPSHOT <img id="_1202290395" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1762166322', '_1202290395' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1762166322" style="display:none"><table class="bodyTable"><tr class="b"><th>presage2-core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="http://github.com/Presage/Presage2/presage2-core" class="externalLink">http://github.com/Presage/Presage2/presage2-core</a></p>
+<p><b>Project License: </b><a href="http://www.gnu.org/licenses/lgpl-3.0-standalone.html" class="externalLink">LGPL</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.google.inject:guice:jar:3.0 (compile) <img id="_1206946787" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1033410970', '_1206946787' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1033410970" style="display:none"><table class="bodyTable"><tr class="b"><th>Google Guice - Core Library</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Guice is a lightweight dependency injection framework for Java 5 and above</p>
+<p><b>URL: </b><a href="http://code.google.com/p/google-guice/guice" class="externalLink">http://code.google.com/p/google-guice/guice</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>javax.inject:javax.inject:jar:1 (compile) <img id="_1990731840" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_212319050', '_1990731840' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_212319050" style="display:none"><table class="bodyTable"><tr class="b"><th>javax.inject</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>The javax.inject API</p>
+<p><b>URL: </b><a href="http://code.google.com/p/atinject/" class="externalLink">http://code.google.com/p/atinject/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>aopalliance:aopalliance:jar:1.0 (compile) <img id="_1243148585" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2119105726', '_1243148585' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2119105726" style="display:none"><table class="bodyTable"><tr class="b"><th>AOP alliance</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>AOP Alliance</p>
+<p><b>URL: </b><a href="http://aopalliance.sourceforge.net" class="externalLink">http://aopalliance.sourceforge.net</a></p>
+<p><b>Project License: </b>Public Domain</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.google.inject.extensions:guice-assistedinject:jar:3.0 (compile) <img id="_261296686" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1836539970', '_261296686' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1836539970" style="display:none"><table class="bodyTable"><tr class="b"><th>Google Guice - Extensions - AssistedInject</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Guice is a lightweight dependency injection framework for Java 5 and above</p>
+<p><b>URL: </b><a href="http://code.google.com/p/google-guice/extensions-parent/guice-assistedinject" class="externalLink">http://code.google.com/p/google-guice/extensions-parent/guice-assistedinject</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.google.inject:guice:jar:3.0 (compile) <img id="_1059844819" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1996674876', '_1059844819' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1996674876" style="display:none"><table class="bodyTable"><tr class="b"><th>Google Guice - Core Library</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Guice is a lightweight dependency injection framework for Java 5 and above</p>
+<p><b>URL: </b><a href="http://code.google.com/p/google-guice/guice" class="externalLink">http://code.google.com/p/google-guice/guice</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.google.inject.extensions:guice-multibindings:jar:3.0 (compile) <img id="_1889180623" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2139941873', '_1889180623' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2139941873" style="display:none"><table class="bodyTable"><tr class="b"><th>Google Guice - Extensions - MultiBindings</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Guice is a lightweight dependency injection framework for Java 5 and above</p>
+<p><b>URL: </b><a href="http://code.google.com/p/google-guice/extensions-parent/guice-multibindings" class="externalLink">http://code.google.com/p/google-guice/extensions-parent/guice-multibindings</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.google.inject:guice:jar:3.0 (compile) <img id="_879907368" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1238751278', '_879907368' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1238751278" style="display:none"><table class="bodyTable"><tr class="b"><th>Google Guice - Core Library</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Guice is a lightweight dependency injection framework for Java 5 and above</p>
+<p><b>URL: </b><a href="http://code.google.com/p/google-guice/guice" class="externalLink">http://code.google.com/p/google-guice/guice</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>log4j:log4j:jar:1.2.16 (compile) <img id="_1539126324" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2004748128', '_1539126324' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2004748128" style="display:none"><table class="bodyTable"><tr class="b"><th>Apache Log4j</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Apache Log4j 1.2</p>
+<p><b>URL: </b><a href="http://logging.apache.org/log4j/1.2/" class="externalLink">http://logging.apache.org/log4j/1.2/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-cli:commons-cli:jar:1.2 (compile) <img id="_2113225963" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_732141262', '_2113225963' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_732141262" style="display:none"><table class="bodyTable"><tr class="b"><th>Commons CLI</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>Commons CLI provides a simple API for presenting, processing and validating a command line interface.</p>
+<p><b>URL: </b><a href="http://commons.apache.org/cli/" class="externalLink">http://commons.apache.org/cli/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>junit:junit:jar:4.8.2 (test) <img id="_1316718802" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_107205579', '_1316718802' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_107205579" style="display:none"><table class="bodyTable"><tr class="b"><th>JUnit</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>JUnit is a regression testing framework. It is used by the developer who implements unit tests in Java.</p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.jmock:jmock:jar:2.5.1 (test) <img id="_216694005" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1779112841', '_216694005' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1779112841" style="display:none"><table class="bodyTable"><tr class="b"><th>jMock 2 Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b><a href="http://jmock.org/license.html" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.hamcrest:hamcrest-core:jar:1.1 (test) <img id="_684278678" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_576048213', '_684278678' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_576048213" style="display:none"><table class="bodyTable"><tr class="b"><th>Hamcrest Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/bsd-license.php" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.hamcrest:hamcrest-library:jar:1.1 (test) <img id="_64321723" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_530918449', '_64321723' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_530918449" style="display:none"><table class="bodyTable"><tr class="b"><th>Hamcrest Library</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/bsd-license.php" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.hamcrest:hamcrest-core:jar:1.1 (test) <img id="_1650526143" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_990766499', '_1650526143' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_990766499" style="display:none"><table class="bodyTable"><tr class="b"><th>Hamcrest Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/bsd-license.php" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>org.jmock:jmock-junit4:jar:2.5.1 (test) <img id="_1892551258" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_12420396', '_1892551258' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_12420396" style="display:none"><table class="bodyTable"><tr class="b"><th>jMock JUnit 4 Extension</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b><a href="http://jmock.org/license.html" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>org.jmock:jmock:jar:2.5.1 (test) <img id="_480399628" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1154656237', '_480399628' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1154656237" style="display:none"><table class="bodyTable"><tr class="b"><th>jMock 2 Core</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b><a href="http://jmock.org/license.html" class="externalLink">BSD style</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>junit:junit-dep:jar:4.4 (test) <img id="_1937003188" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_972990946', '_1937003188' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_972990946" style="display:none"><table class="bodyTable"><tr class="b"><th>JUnit</th>
+</tr>
+<tr class="a"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.
+    The junit-dep artifact is the same as the junit artifact, expect that all dependencies are explicity declared and unbundled.</p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section"><h2>Licenses</h2>
+<p><b>LGPL: </b>presage2-core</p>
+<p><b>BSD style: </b>Hamcrest Core, Hamcrest Library, jMock 2 Core, jMock JUnit 4 Extension</p>
+<p><b>Public Domain: </b>AOP alliance</p>
+<p><b>Common Public License Version 1.0: </b>JUnit</p>
+<p><b>The Apache Software License, Version 2.0: </b>Apache Log4j, Commons CLI, Google Guice - Core Library, Google Guice - Extensions - AssistedInject, Google Guice - Extensions - MultiBindings, javax.inject</p>
+</div>
+<div class="section"><h2>Dependency File Details</h2>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Filename</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="a"><td align="left">aopalliance-1.0.jar</td>
+<td align="right">4.36 kB</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">guice-3.0.jar</td>
+<td align="right">693.84 kB</td>
+<td align="right">585</td>
+<td align="right">565</td>
+<td align="right">12</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">guice-assistedinject-3.0.jar</td>
+<td align="right">36.13 kB</td>
+<td align="right">27</td>
+<td align="right">18</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">guice-multibindings-3.0.jar</td>
+<td align="right">33.66 kB</td>
+<td align="right">29</td>
+<td align="right">20</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">commons-cli-1.2.jar</td>
+<td align="right">40.16 kB</td>
+<td align="right">35</td>
+<td align="right">22</td>
+<td align="right">1</td>
+<td align="center">1.4</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">javax.inject-1.jar</td>
+<td align="right">2.44 kB</td>
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">release</td>
+</tr>
+<tr class="a"><td align="left">junit-4.8.2.jar</td>
+<td align="right">231.78 kB</td>
+<td align="right">267</td>
+<td align="right">230</td>
+<td align="right">30</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">junit-dep-4.4.jar</td>
+<td align="right">139.07 kB</td>
+<td align="right">162</td>
+<td align="right">133</td>
+<td align="right">17</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">log4j-1.2.16.jar</td>
+<td align="right">470.25 kB</td>
+<td align="right">346</td>
+<td align="right">308</td>
+<td align="right">20</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">hamcrest-core-1.1.jar</td>
+<td align="right">74.85 kB</td>
+<td align="right">54</td>
+<td align="right">21</td>
+<td align="right">3</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">hamcrest-library-1.1.jar</td>
+<td align="right">108.89 kB</td>
+<td align="right">66</td>
+<td align="right">24</td>
+<td align="right">7</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">jmock-2.5.1.jar</td>
+<td align="right">134.96 kB</td>
+<td align="right">91</td>
+<td align="right">74</td>
+<td align="right">9</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jmock-junit4-2.5.1.jar</td>
+<td align="right">8.37 kB</td>
+<td align="right">14</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><th align="left">Total</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="a"><td align="right">13</td>
+<td align="right">1.93 MB</td>
+<td align="right">1,699</td>
+<td align="right">1,433</td>
+<td align="right">105</td>
+<td align="center">1.5</td>
+<td align="right">12</td>
+</tr>
+<tr class="b"><td align="right">compile: 7</td>
+<td align="right">compile: 1.25 MB</td>
+<td align="right">compile: 1,045</td>
+<td align="right">compile: 948</td>
+<td align="right">compile: 38</td>
+<td align="center">-</td>
+<td align="right">compile: 6</td>
+</tr>
+<tr class="a"><td align="right">test: 6</td>
+<td align="right">test: 697.91 kB</td>
+<td align="right">test: 654</td>
+<td align="right">test: 485</td>
+<td align="right">test: 67</td>
+<td align="center">-</td>
+<td align="right">test: 6</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section"><h2>Dependency Repository Locations</h2>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Repo ID</th>
+<th align="left">URL</th>
+<th align="center">Release</th>
+<th align="center">Snapshot</th>
+</tr>
+<tr class="a"><td align="left">apache.snapshots</td>
+<td align="left"><a href="http://people.apache.org/repo/m2-snapshot-repository" class="externalLink">http://people.apache.org/repo/m2-snapshot-repository</a></td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">presage</td>
+<td align="left"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" class="externalLink">http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/</a></td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="a"><td align="left">central</td>
+<td align="left"><a href="http://repo1.maven.org/maven2" class="externalLink">http://repo1.maven.org/maven2</a></td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+<p>Repository locations for each of the Dependencies.</p>
+<table class="bodyTable"><tbody><tr class="b"><th align="left">Artifact</th>
+<th align="center">apache.snapshots</th>
+<th align="center">presage</th>
+<th align="center">central</th>
+</tr>
+<tr class="a"><td align="left">aopalliance:aopalliance:jar:1.0</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//aopalliance/aopalliance/1.0/aopalliance-1.0.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.google.inject:guice:jar:3.0</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//com/google/inject/guice/3.0/guice-3.0.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/google/inject/guice/3.0/guice-3.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">com.google.inject.extensions:guice-assistedinject:jar:3.0</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//com/google/inject/extensions/guice-assistedinject/3.0/guice-assistedinject-3.0.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/3.0/guice-assistedinject-3.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">com.google.inject.extensions:guice-multibindings:jar:3.0</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//com/google/inject/extensions/guice-multibindings/3.0/guice-multibindings-3.0.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/google/inject/extensions/guice-multibindings/3.0/guice-multibindings-3.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">commons-cli:commons-cli:jar:1.2</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//commons-cli/commons-cli/1.2/commons-cli-1.2.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">javax.inject:javax.inject:jar:1</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//javax/inject/javax.inject/1/javax.inject-1.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">junit:junit:jar:4.8.2</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//junit/junit/4.8.2/junit-4.8.2.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">junit:junit-dep:jar:4.4</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//junit/junit-dep/4.4/junit-dep-4.4.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/junit/junit-dep/4.4/junit-dep-4.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">log4j:log4j:jar:1.2.16</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//log4j/log4j/1.2.16/log4j-1.2.16.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">org.hamcrest:hamcrest-core:jar:1.1</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">org.hamcrest:hamcrest-library:jar:1.1</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-library/1.1/hamcrest-library-1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><td align="left">org.jmock:jmock:jar:2.5.1</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//org/jmock/jmock/2.5.1/jmock-2.5.1.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/jmock/jmock/2.5.1/jmock-2.5.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="a"><td align="left">org.jmock:jmock-junit4:jar:2.5.1</td>
+<td align="center">-</td>
+<td align="center"><a href="http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public//org/jmock/jmock-junit4/2.5.1/jmock-junit4-2.5.1.jar" class="externalLink"><img alt="Found at http://ee-sm1106.ee.ic.ac.uk:8080/nexus/content/groups/public/" src="images/icon_success_sml.gif" /></a></td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/jmock/jmock-junit4/2.5.1/jmock-junit4-2.5.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+</tr>
+<tr class="b"><th align="left">Total</th>
+<th align="center">apache.snapshots</th>
+<th align="center">presage</th>
+<th align="center">central</th>
+</tr>
+<tr class="a"><td align="left">13 (compile: 7, test: 6)</td>
+<td align="center">0</td>
+<td align="center">13</td>
+<td align="center">13</td>
+</tr>
+</tbody>
+</table>
 </div>
 
       </div>
