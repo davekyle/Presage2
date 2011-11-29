@@ -7249,7 +7249,7 @@
 </method>
 </interface>
 <class name="Location"
- extends="org.apache.commons.math.geometry.Vector3D"
+ extends="Vector3D"
  abstract="false"
  static="false"
  final="false"
@@ -7258,6 +7258,16 @@
 >
 <implements name="uk.ac.imperial.presage2.util.location.HasLocation">
 </implements>
+<constructor name="Location"
+ type="uk.ac.imperial.presage2.util.location.Location"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="Vector3D">
+</parameter>
+</constructor>
 <constructor name="Location"
  type="uk.ac.imperial.presage2.util.location.Location"
  static="false"
@@ -7284,16 +7294,19 @@
 <parameter name="z" type="double">
 </parameter>
 </constructor>
-<constructor name="Location"
- type="uk.ac.imperial.presage2.util.location.Location"
+<method name="clone"
+ return="uk.ac.imperial.presage2.util.location.Location"
+ abstract="false"
+ native="false"
+ synchronized="false"
  static="false"
  final="false"
  deprecated="not deprecated"
- visibility="public"
+ visibility="protected"
 >
-<parameter name="v" type="org.apache.commons.math.geometry.Vector3D">
-</parameter>
-</constructor>
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
 <method name="distanceTo"
  return="double"
  abstract="false"
@@ -7347,7 +7360,7 @@
 </parameter>
 </method>
 <method name="getVector"
- return="org.apache.commons.math.geometry.Vector3D"
+ return="Vector3D"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7358,7 +7371,7 @@
 >
 </method>
 <method name="getVectorTo"
- return="org.apache.commons.math.geometry.Vector3D"
+ return="Vector3D"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7537,7 +7550,7 @@
 </method>
 </class>
 <class name="Move"
- extends="org.apache.commons.math.geometry.Vector3D"
+ extends="Vector3D"
  abstract="false"
  static="false"
  final="false"
@@ -7546,6 +7559,16 @@
 >
 <implements name="uk.ac.imperial.presage2.core.Action">
 </implements>
+<constructor name="Move"
+ type="uk.ac.imperial.presage2.util.location.Move"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="Vector3D">
+</parameter>
+</constructor>
 <constructor name="Move"
  type="uk.ac.imperial.presage2.util.location.Move"
  static="false"
@@ -7570,16 +7593,6 @@
 <parameter name="y" type="double">
 </parameter>
 <parameter name="z" type="double">
-</parameter>
-</constructor>
-<constructor name="Move"
- type="uk.ac.imperial.presage2.util.location.Move"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="v" type="org.apache.commons.math.geometry.Vector3D">
 </parameter>
 </constructor>
 </class>
