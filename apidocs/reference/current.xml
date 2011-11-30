@@ -503,7 +503,7 @@
  synchronized="false"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 </method>
@@ -512,7 +512,7 @@
  abstract="true"
  static="false"
  final="false"
- deprecated="not deprecated"
+ deprecated="deprecated"
  visibility="public"
 >
 <method name="failure"
@@ -704,14 +704,42 @@
 </parameter>
 </method>
 </interface>
-<interface name="PersistentSimulation"
+<interface name="PersistentEnvironment"
  abstract="true"
  static="false"
  final="false"
  deprecated="not deprecated"
  visibility="public"
 >
-<method name="addChild"
+<method name="getProperty"
+ return="java.lang.Object"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getProperty"
+ return="java.lang.Object"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="timestep" type="int">
+</parameter>
+</method>
+<method name="setProperty"
  return="void"
  abstract="true"
  native="false"
@@ -721,9 +749,36 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="child" type="uk.ac.imperial.presage2.core.db.persistent.PersistentSimulation">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="timestep" type="int">
+</parameter>
+<parameter name="value" type="java.lang.Object">
 </parameter>
 </method>
+<method name="setProperty"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+</interface>
+<interface name="PersistentSimulation"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
 <method name="addParameter"
  return="void"
  abstract="true"
@@ -741,6 +796,17 @@
 </method>
 <method name="getAgents"
  return="java.util.Set&lt;uk.ac.imperial.presage2.core.db.persistent.PersistentAgent&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getChildren"
+ return="java.util.List&lt;java.lang.Long&gt;"
  abstract="true"
  native="false"
  synchronized="false"
@@ -774,6 +840,17 @@
 </method>
 <method name="getCurrentTime"
  return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEnvironment"
+ return="uk.ac.imperial.presage2.core.db.persistent.PersistentEnvironment"
  abstract="true"
  native="false"
  synchronized="false"
@@ -1801,17 +1878,6 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<method name="getTime"
- return="uk.ac.imperial.presage2.core.Time"
- abstract="true"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
 </interface>
 <interface name="EventBus"
  abstract="true"
@@ -4156,6 +4222,52 @@
  visibility="public"
 >
 </method>
+</class>
+<class name="Events"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="Events"
+ type="uk.ac.imperial.presage2.core.simulator.Events"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<field name="INITIALISED"
+ type="uk.ac.imperial.presage2.core.event.Event"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="Events.Initialised"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="uk.ac.imperial.presage2.core.event.Event">
+</implements>
+<constructor name="Events.Initialised"
+ type="uk.ac.imperial.presage2.core.simulator.Events.Initialised"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
 </class>
 <class name="ExecutorServiceThreadPool"
  extends="java.lang.Object"
@@ -7249,7 +7361,7 @@
 </method>
 </interface>
 <class name="Location"
- extends="Vector3D"
+ extends="org.apache.commons.math.geometry.Vector3D"
  abstract="false"
  static="false"
  final="false"
@@ -7258,16 +7370,6 @@
 >
 <implements name="uk.ac.imperial.presage2.util.location.HasLocation">
 </implements>
-<constructor name="Location"
- type="uk.ac.imperial.presage2.util.location.Location"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="v" type="Vector3D">
-</parameter>
-</constructor>
 <constructor name="Location"
  type="uk.ac.imperial.presage2.util.location.Location"
  static="false"
@@ -7294,19 +7396,16 @@
 <parameter name="z" type="double">
 </parameter>
 </constructor>
-<method name="clone"
- return="uk.ac.imperial.presage2.util.location.Location"
- abstract="false"
- native="false"
- synchronized="false"
+<constructor name="Location"
+ type="uk.ac.imperial.presage2.util.location.Location"
  static="false"
  final="false"
  deprecated="not deprecated"
- visibility="protected"
+ visibility="public"
 >
-<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
-</exception>
-</method>
+<parameter name="v" type="org.apache.commons.math.geometry.Vector3D">
+</parameter>
+</constructor>
 <method name="distanceTo"
  return="double"
  abstract="false"
@@ -7360,7 +7459,7 @@
 </parameter>
 </method>
 <method name="getVector"
- return="Vector3D"
+ return="org.apache.commons.math.geometry.Vector3D"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7371,7 +7470,7 @@
 >
 </method>
 <method name="getVectorTo"
- return="Vector3D"
+ return="org.apache.commons.math.geometry.Vector3D"
  abstract="false"
  native="false"
  synchronized="false"
@@ -7550,7 +7649,7 @@
 </method>
 </class>
 <class name="Move"
- extends="Vector3D"
+ extends="org.apache.commons.math.geometry.Vector3D"
  abstract="false"
  static="false"
  final="false"
@@ -7559,16 +7658,6 @@
 >
 <implements name="uk.ac.imperial.presage2.core.Action">
 </implements>
-<constructor name="Move"
- type="uk.ac.imperial.presage2.util.location.Move"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="v" type="Vector3D">
-</parameter>
-</constructor>
 <constructor name="Move"
  type="uk.ac.imperial.presage2.util.location.Move"
  static="false"
@@ -7593,6 +7682,16 @@
 <parameter name="y" type="double">
 </parameter>
 <parameter name="z" type="double">
+</parameter>
+</constructor>
+<constructor name="Move"
+ type="uk.ac.imperial.presage2.util.location.Move"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="org.apache.commons.math.geometry.Vector3D">
 </parameter>
 </constructor>
 </class>

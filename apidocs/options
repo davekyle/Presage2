@@ -1,7 +1,7 @@
 -bootclasspath
 '/usr/lib/jvm/java-6-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/netx.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/plugin.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/rhino.jar:/usr/lib/jvm/java-6-openjdk/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-openjdk/jre/classes'
 -classpath
-'/usr/share/tomcat6/.jenkins/workspace/presage2-master/target/classes:/usr/share/tomcat6/.jenkins/workspace/presage2-master/core/target/classes:/usr/share/tomcat6/.jenkins/workspace/presage2-master/util/target/classes:/usr/share/tomcat6/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/usr/share/tomcat6/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/usr/share/tomcat6/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/usr/share/tomcat6/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar:/usr/share/tomcat6/.m2/repository/com/google/inject/extensions/guice-assistedinject/3.0/guice-assistedinject-3.0.jar:/usr/share/tomcat6/.m2/repository/com/google/inject/extensions/guice-multibindings/3.0/guice-multibindings-3.0.jar:/usr/share/tomcat6/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar:/usr/share/tomcat6/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar'
+'/usr/share/tomcat6/.jenkins/workspace/presage2-develop/target/classes:/usr/share/tomcat6/.jenkins/workspace/presage2-develop/core/target/classes:/usr/share/tomcat6/.jenkins/workspace/presage2-develop/util/target/classes:/usr/share/tomcat6/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar:/usr/share/tomcat6/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/usr/share/tomcat6/.m2/repository/uk/ac/imperial/presage2/presage2-core/0.3.0-SNAPSHOT/presage2-core-0.3.0-SNAPSHOT.jar:/usr/share/tomcat6/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/usr/share/tomcat6/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar:/usr/share/tomcat6/.m2/repository/com/google/inject/extensions/guice-assistedinject/3.0/guice-assistedinject-3.0.jar:/usr/share/tomcat6/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/usr/share/tomcat6/.m2/repository/com/google/inject/extensions/guice-multibindings/3.0/guice-multibindings-3.0.jar:/usr/share/tomcat6/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar:/usr/share/tomcat6/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar'
 -doclet
 'com.google.doclava.Doclava'
 -docletpath
@@ -10,7 +10,7 @@
 'UTF-8'
 -protected
 -sourcepath
-'/usr/share/tomcat6/.jenkins/workspace/presage2-master/core/src/main/java:/usr/share/tomcat6/.jenkins/workspace/presage2-master/util/src/main/java'
+'/usr/share/tomcat6/.jenkins/workspace/presage2-develop/core/src/main/java:/usr/share/tomcat6/.jenkins/workspace/presage2-develop/util/src/main/java'
 -federate JDK
 						http://download.oracle.com/javase/6/docs/api/index.html?
 						-federationxml JDK
@@ -18,7 +18,7 @@
 						-federate "Google Guice"
 						http://google-guice.googlecode.com/svn/trunk/javadoc
 						-apiversion
-						0.2.5
+						0.3.0-SNAPSHOT
 						-since
 						http://presage.github.com/docs/api/0.2.1.xml
 						0.2.1
@@ -32,5 +32,5 @@
 						http://presage.github.com/docs/api/0.2.4.xml
 						0.2.4
 						-d
-						/usr/share/tomcat6/.jenkins/workspace/presage2-master/target/site/apidocs
+						/usr/share/tomcat6/.jenkins/workspace/presage2-develop/target/site/apidocs
 						-title Presage2

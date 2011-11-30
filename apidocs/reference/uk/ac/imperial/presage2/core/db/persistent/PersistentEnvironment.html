@@ -55,7 +55,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../../favicon.ico" />
 <title>
 
-  uk.ac.imperial.presage2.core.util.random Details - Presage2
+  PersistentEnvironment - Presage2
 
 
 </title>
@@ -162,7 +162,7 @@
   <a href="../../../../../../../uk/ac/imperial/presage2/core/cli/package-summary.html">uk.ac.imperial.presage2.core.cli</a></li>
     <li class="api apilevel-0.3.0-SNAPSHOT">
   <a href="../../../../../../../uk/ac/imperial/presage2/core/db/package-summary.html">uk.ac.imperial.presage2.core.db</a></li>
-    <li class="api apilevel-0.3.0-SNAPSHOT">
+    <li class="selected api apilevel-0.3.0-SNAPSHOT">
   <a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/package-summary.html">uk.ac.imperial.presage2.core.db.persistent</a></li>
     <li class="api apilevel-0.3.0-SNAPSHOT">
   <a href="../../../../../../../uk/ac/imperial/presage2/core/environment/package-summary.html">uk.ac.imperial.presage2.core.environment</a></li>
@@ -178,7 +178,7 @@
   <a href="../../../../../../../uk/ac/imperial/presage2/core/plugin/package-summary.html">uk.ac.imperial.presage2.core.plugin</a></li>
     <li class="api apilevel-0.3.0-SNAPSHOT">
   <a href="../../../../../../../uk/ac/imperial/presage2/core/simulator/package-summary.html">uk.ac.imperial.presage2.core.simulator</a></li>
-    <li class="selected api apilevel-0.3.0-SNAPSHOT">
+    <li class="api apilevel-0.3.0-SNAPSHOT">
   <a href="../../../../../../../uk/ac/imperial/presage2/core/util/random/package-summary.html">uk.ac.imperial.presage2.core.util.random</a></li>
     <li class="api apilevel-0.3.0-SNAPSHOT">
   <a href="../../../../../../../uk/ac/imperial/presage2/util/environment/package-summary.html">uk.ac.imperial.presage2.util.environment</a></li>
@@ -200,18 +200,18 @@
           <div id="classes-nav">
             <ul>
               
-              
-    <li><h2>Classes</h2>
+    <li><h2>Interfaces</h2>
       <ul>
-        <li class="api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../../uk/ac/imperial/presage2/core/util/random/Random.html">Random</a></li>
+          <li class="api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/PersistentAgent.html">PersistentAgent</a></li>
+          <li class="api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/PersistentAgentFactory.html">PersistentAgentFactory</a></li>
+          <li class="selected api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/PersistentEnvironment.html">PersistentEnvironment</a></li>
+          <li class="api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/PersistentSimulation.html">PersistentSimulation</a></li>
+          <li class="api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/SimulationFactory.html">SimulationFactory</a></li>
+          <li class="api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/TransientAgentState.html">TransientAgentState</a></li>
       </ul>
     </li>
               
-    <li><h2>Annotations</h2>
-      <ul>
-        <li class="api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../../uk/ac/imperial/presage2/core/util/random/RandomSeed.html">RandomSeed</a></li>
-      </ul>
-    </li>
+              
               
               
               
@@ -249,6 +249,13 @@
 <div class="g-unit" id="doc-content">
 
 <div id="api-info-block">
+
+
+
+
+<div class="sum-details-links">
+
+</div><!-- end sum-details-links -->
 <div class="api-level">
   
 
@@ -259,29 +266,369 @@
   
 
 </div>
-</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
 
 <div id="jd-header">
-  package
-  <h1>uk.ac.imperial.presage2.core.util.random</b></h1>
-  <div class="jd-nav">
-      <a class="jd-navlink" href="package-summary.html">Classes</a> | Description
-  </div>
+    public
+     
+     
+    
+    interface
+<h1>PersistentEnvironment</h1>
+
+
+
+  
+  
+  
+
+
 </div><!-- end header -->
 
 <div id="naMessage"></div>
 
 <div id="jd-content" class="api apilevel-0.3.0-SNAPSHOT">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">uk.ac.imperial.presage2.core.db.persistent.PersistentEnvironment</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
 <div class="jd-descr">
-<p></p>
+
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/PersistentEnvironment.html#getProperty(java.lang.String)">getProperty</a></span>(String key)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/PersistentEnvironment.html#getProperty(java.lang.String, int)">getProperty</a></span>(String key, int timestep)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/PersistentEnvironment.html#setProperty(java.lang.String, int, java.lang.Object)">setProperty</a></span>(String key, int timestep, Object value)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../uk/ac/imperial/presage2/core/db/persistent/PersistentEnvironment.html#setProperty(java.lang.String, java.lang.Object)">setProperty</a></span>(String key, Object value)</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="getProperty(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-0.3.0-SNAPSHOT"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        Object
+      </span>
+      <span class="sympad">getProperty</span>
+      <span class="normal">(String key)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+  Since: <a href="../../../../../../../guide/appendix/api-levels.html#level0.3.0-SNAPSHOT">API Level 0.3.0-SNAPSHOT</a>
+
 </div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getProperty(java.lang.String, int)"></A>
+
+<div class="jd-details api apilevel-0.3.0-SNAPSHOT"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        Object
+      </span>
+      <span class="sympad">getProperty</span>
+      <span class="normal">(String key, int timestep)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+  Since: <a href="../../../../../../../guide/appendix/api-levels.html#level0.3.0-SNAPSHOT">API Level 0.3.0-SNAPSHOT</a>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setProperty(java.lang.String, int, java.lang.Object)"></A>
+
+<div class="jd-details api apilevel-0.3.0-SNAPSHOT"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setProperty</span>
+      <span class="normal">(String key, int timestep, Object value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+  Since: <a href="../../../../../../../guide/appendix/api-levels.html#level0.3.0-SNAPSHOT">API Level 0.3.0-SNAPSHOT</a>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setProperty(java.lang.String, java.lang.Object)"></A>
+
+<div class="jd-details api apilevel-0.3.0-SNAPSHOT"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setProperty</span>
+      <span class="normal">(String key, Object value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+  Since: <a href="../../../../../../../guide/appendix/api-levels.html#level0.3.0-SNAPSHOT">API Level 0.3.0-SNAPSHOT</a>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
 
 <div id="footer">
 Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
 </div> <!-- end footer -->
 
-</div><!-- end jd-content -->
-</div> <!-- end doc-content -->
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
 
 </div> <!-- end body-content --> 
 
