@@ -55,7 +55,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
 <title>
 
-  ServiceDependencies - Presage2
+  SharedStateStorage - Presage2
 
 
 </title>
@@ -83,7 +83,7 @@
 </noscript>
 </head>
 
-<body class="0.2.2">
+<body class="0.3.0-SNAPSHOT">
 
 <div id="header">
     <div id="headerLeft">
@@ -206,7 +206,7 @@
           <li class="api apilevel-0.2.1"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentConnector.html">EnvironmentConnector</a></li>
           <li class="api apilevel-0.2.1"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentServiceProvider.html">EnvironmentServiceProvider</a></li>
           <li class="api apilevel-0.2.1"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html">EnvironmentSharedStateAccess</a></li>
-          <li class="api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/SharedStateStorage.html">SharedStateStorage</a></li>
+          <li class="selected api apilevel-0.3.0-SNAPSHOT"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/SharedStateStorage.html">SharedStateStorage</a></li>
           <li class="api apilevel-0.2.2"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/StateTransformer.html">StateTransformer</a></li>
       </ul>
     </li>
@@ -223,7 +223,7 @@
               
     <li><h2>Annotations</h2>
       <ul>
-          <li class="selected api apilevel-0.2.2"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/ServiceDependencies.html">ServiceDependencies</a></li>
+          <li class="api apilevel-0.2.2"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/ServiceDependencies.html">ServiceDependencies</a></li>
       </ul>
     </li>
               
@@ -282,6 +282,13 @@
   
   
 
+  
+   
+  
+  
+  
+  
+
 
 <div class="sum-details-links">
 
@@ -307,7 +314,7 @@ Summary:
 <div class="api-level">
   
 
-  Since: <a href="../../../../../../guide/appendix/api-levels.html#level0.2.2">API Level 0.2.2</a>
+  Since: <a href="../../../../../../guide/appendix/api-levels.html#level0.3.0-SNAPSHOT">API Level 0.3.0-SNAPSHOT</a>
 
 
   
@@ -323,9 +330,9 @@ Summary:
     public
      
      
-    abstract
-    @interface
-<h1>ServiceDependencies</h1>
+    
+    interface
+<h1>SharedStateStorage</h1>
 
 
 
@@ -333,7 +340,9 @@ Summary:
   
       implements 
       
-        <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/annotation/Annotation.html">Annotation</a> 
+        <a href="../../../../../../uk/ac/imperial/presage2/core/TimeDriven.html">TimeDriven</a> 
+      
+        <a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html">EnvironmentSharedStateAccess</a> 
       
   
   
@@ -343,13 +352,13 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-0.2.2">
+<div id="jd-content" class="api apilevel-0.3.0-SNAPSHOT">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">uk.ac.imperial.presage2.core.environment.ServiceDependencies</td>
+        <td colspan="1" class="jd-inheritance-class-cell">uk.ac.imperial.presage2.core.environment.SharedStateStorage</td>
     </tr>
     
 
@@ -360,12 +369,46 @@ Summary:
 
 
 
+<table class="jd-sumtable jd-sumtable-subclasses"><tr><td colspan="12" style="border:none;margin:0;padding:0;">
+
+  <a href="#" onclick="return toggleInherited(this, null)" id="subclasses-indirect" class="jd-expando-trigger closed"
+          ><img id="subclasses-indirect-trigger"
+          src="../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>Known Indirect Subclasses
+
+  <div id="subclasses-indirect">
+      <div id="subclasses-indirect-list"
+              class="jd-inheritedlinks"
+              
+              >
+          
+            
+              <a href="../../../../../../uk/ac/imperial/presage2/util/environment/MappedSharedState.html">MappedSharedState</a>
+            
+          
+      </div>
+      <div id="subclasses-indirect-summary"
+              style="display: none;"
+              >
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-0.3.0-SNAPSHOT" >
+              <td class="jd-linkcol"><a href="../../../../../../uk/ac/imperial/presage2/util/environment/MappedSharedState.html">MappedSharedState</a></td>
+              <td class="jd-descrcol" width="100%">&nbsp;</td>
+          </tr>
+  </table>
+      </div>
+  </div>
+</td></tr></table>
+
 
 <div class="jd-descr">
 
 
 <h2>Class Overview</h2>
-<p>A description of the <code><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentService.html">EnvironmentService</a></code> this class depends on.</p>
+<p>Classes implementing this can act as a storage layer for the shared state of
+ a simulation. It combines access and modification of
+ <code><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html">EnvironmentSharedStateAccess</a></code> with <code><a href="../../../../../../uk/ac/imperial/presage2/core/TimeDriven.html">TimeDriven</a></code> to control when
+ state changes and committed.</p>
 
 
 
@@ -432,84 +475,291 @@ Summary:
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.annotation.Annotation" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.annotation.Annotation-trigger"
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-uk.ac.imperial.presage2.core.TimeDriven" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-uk.ac.imperial.presage2.core.TimeDriven-trigger"
           src="../../../../../../../assets/images/triangle-closed.png"
           class="jd-expando-trigger-img" /></a>
 From interface
 
-  <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/annotation/Annotation.html">java.lang.annotation.Annotation</a>
+  <a href="../../../../../../uk/ac/imperial/presage2/core/TimeDriven.html">uk.ac.imperial.presage2.core.TimeDriven</a>
 
-<div id="inherited-methods-java.lang.annotation.Annotation">
-  <div id="inherited-methods-java.lang.annotation.Annotation-list"
+<div id="inherited-methods-uk.ac.imperial.presage2.core.TimeDriven">
+  <div id="inherited-methods-uk.ac.imperial.presage2.core.TimeDriven-list"
         class="jd-inheritedlinks">
   </div>
-  <div id="inherited-methods-java.lang.annotation.Annotation-summary" style="display: none;">
+  <div id="inherited-methods-uk.ac.imperial.presage2.core.TimeDriven-summary" style="display: none;">
     <table class="jd-sumtable-expando">
     
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class="alt-color api apilevel-0.2.1" >
         <td class="jd-typecol"><nobr>
             abstract
             
             
             
             
-            <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Class.html">Class</a>&lt;?&nbsp;extends&nbsp;<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/annotation/Annotation.html">Annotation</a>&gt;</nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">annotationType</span>()</nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/TimeDriven.html#incrementTime()">incrementTime</a></span>()</nobr>
         
   </td></tr>
 
 
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-uk.ac.imperial.presage2.core.environment.EnvironmentSharedStateAccess" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-uk.ac.imperial.presage2.core.environment.EnvironmentSharedStateAccess-trigger"
+          src="../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html">uk.ac.imperial.presage2.core.environment.EnvironmentSharedStateAccess</a>
+
+<div id="inherited-methods-uk.ac.imperial.presage2.core.environment.EnvironmentSharedStateAccess">
+  <div id="inherited-methods-uk.ac.imperial.presage2.core.environment.EnvironmentSharedStateAccess-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-uk.ac.imperial.presage2.core.environment.EnvironmentSharedStateAccess-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-0.3.0-SNAPSHOT" >
         <td class="jd-typecol"><nobr>
             abstract
             
             
             
             
-            boolean</nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">equals</span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">Object</a> arg0)</nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#change(java.lang.String, java.util.UUID, java.io.Serializable)">change</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/util/UUID.html">UUID</a> participantID, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/io/Serializable.html">Serializable</a> value)</nobr>
         
+        <div class="jd-descrdiv"><p>
+ Change a shared state value for a given agent to a given value.</div>
+  
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-0.3.0-SNAPSHOT" >
         <td class="jd-typecol"><nobr>
             abstract
             
             
             
             
-            int</nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">hashCode</span>()</nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#change(java.lang.String, java.util.UUID, uk.ac.imperial.presage2.core.environment.StateTransformer)">change</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/util/UUID.html">UUID</a> participantID, <a href="../../../../../../uk/ac/imperial/presage2/core/environment/StateTransformer.html">StateTransformer</a> change)</nobr>
         
+        <div class="jd-descrdiv"><p>
+ Modify a shared state value for a given agent.</div>
+  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-0.3.0-SNAPSHOT" >
         <td class="jd-typecol"><nobr>
             abstract
             
             
             
             
-            <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a></nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">toString</span>()</nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#changeGlobal(java.lang.String, java.io.Serializable)">changeGlobal</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/io/Serializable.html">Serializable</a> value)</nobr>
         
+        <div class="jd-descrdiv"><p>
+ Change a global shared state value to a given new value,
+ </p>
+ <p>
+ Value will not be changed until the next time slice.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-0.2.2" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#changeGlobal(java.lang.String, uk.ac.imperial.presage2.core.environment.StateTransformer)">changeGlobal</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name, <a href="../../../../../../uk/ac/imperial/presage2/core/environment/StateTransformer.html">StateTransformer</a> change)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Modify a global shared state value.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#create(java.lang.String, java.util.UUID, java.io.Serializable)">create</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/util/UUID.html">UUID</a> participantID, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/io/Serializable.html">Serializable</a> value)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Create a shared state value for a given agent.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#create(uk.ac.imperial.presage2.core.environment.ParticipantSharedState)">create</a></span>(<a href="../../../../../../uk/ac/imperial/presage2/core/environment/ParticipantSharedState.html">ParticipantSharedState</a> state)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Create a shared state value for a given agent.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#createGlobal(java.lang.String, java.io.Serializable)">createGlobal</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/io/Serializable.html">Serializable</a> value)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Create a value in the global shared state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#createGlobal(uk.ac.imperial.presage2.core.environment.SharedState)">createGlobal</a></span>(<a href="../../../../../../uk/ac/imperial/presage2/core/environment/SharedState.html">SharedState</a> state)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Create a value in the global shared state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#delete(java.lang.String, java.util.UUID)">delete</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/util/UUID.html">UUID</a> participantID)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Delete a shared state value for a given agent.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-0.3.0-SNAPSHOT" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#deleteGlobal(java.lang.String)">deleteGlobal</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name)</nobr>
+        
+        <div class="jd-descrdiv"><p>
+ Delete a value in the global shared state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-0.2.1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/io/Serializable.html">Serializable</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#get(java.lang.String, java.util.UUID)">get</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name, <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/util/UUID.html">UUID</a> participantID)</nobr>
+        
+        <div class="jd-descrdiv">Get a shared state value for an individual agent.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-0.2.1" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/io/Serializable.html">Serializable</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../uk/ac/imperial/presage2/core/environment/EnvironmentSharedStateAccess.html#getGlobal(java.lang.String)">getGlobal</a></span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a> name)</nobr>
+        
+        <div class="jd-descrdiv">Get a global shared state value.</div>
+  
   </td></tr>
 
 
