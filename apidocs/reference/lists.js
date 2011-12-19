@@ -175,6 +175,6 @@ var DATA = [
       { id:173, label:"uk.ac.imperial.presage2.util.protocols.Protocol", link:"uk/ac/imperial/presage2/util/protocols/Protocol.html", type:"class" },
       { id:174, label:"uk.ac.imperial.presage2.util.protocols.Role", link:"uk/ac/imperial/presage2/util/protocols/Role.html", type:"class" },
       { id:175, label:"uk.ac.imperial.presage2.util.protocols.SpawnAction", link:"uk/ac/imperial/presage2/util/protocols/SpawnAction.html", type:"class" },
-      { id:176, label:"uk.ac.imperial.presage2.util.protocols.TimeoutGuard", link:"uk/ac/imperial/presage2/util/protocols/TimeoutGuard.html", type:"class" }
+      { id:176, label:"uk.ac.imperial.presage2.util.protocols.TimeoutCondition", link:"uk/ac/imperial/presage2/util/protocols/TimeoutCondition.html", type:"class" }
 
     ];

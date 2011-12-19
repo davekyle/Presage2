@@ -6671,7 +6671,7 @@
  return="void"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -6701,7 +6701,7 @@
  return="void"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -6744,7 +6744,7 @@
  return="void"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
@@ -9490,6 +9490,17 @@
  visibility="public"
 >
 </method>
+<method name="getLastTransition"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getMembers"
  return="java.util.Set&lt;uk.ac.imperial.presage2.core.network.NetworkAddress&gt;"
  abstract="false"
@@ -9611,6 +9622,8 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<implements name="uk.ac.imperial.presage2.core.TimeDriven">
+</implements>
 <constructor name="FSMProtocol"
  type="uk.ac.imperial.presage2.util.protocols.FSMProtocol"
  static="false"
@@ -9625,6 +9638,17 @@
 <parameter name="network" type="uk.ac.imperial.presage2.core.network.NetworkAdaptor">
 </parameter>
 </constructor>
+<method name="incrementTime"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="spawn"
  return="uk.ac.imperial.presage2.util.protocols.Conversation"
  abstract="false"
@@ -9863,6 +9887,8 @@
 >
 <implements name="uk.ac.imperial.presage2.core.messaging.InputHandler">
 </implements>
+<implements name="uk.ac.imperial.presage2.core.TimeDriven">
+</implements>
 <constructor name="Protocol"
  type="uk.ac.imperial.presage2.util.protocols.Protocol"
  static="false"
@@ -10078,7 +10104,7 @@
 </parameter>
 </method>
 </class>
-<class name="TimeoutGuard"
+<class name="TimeoutCondition"
  extends="java.lang.Object"
  abstract="false"
  static="false"
@@ -10088,13 +10114,15 @@
 >
 <implements name="uk.ac.imperial.presage2.util.fsm.TransitionCondition">
 </implements>
-<constructor name="TimeoutGuard"
- type="uk.ac.imperial.presage2.util.protocols.TimeoutGuard"
+<constructor name="TimeoutCondition"
+ type="uk.ac.imperial.presage2.util.protocols.TimeoutCondition"
  static="false"
  final="false"
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="timeout" type="int">
+</parameter>
 </constructor>
 <method name="allow"
  return="boolean"
